@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>My Demo site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+
+
+<!-- import the webpage's d3js file -->
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<!-- import the webpage's stylesheet -->
+<link rel="stylesheet" href="/style.css">
+<!-- import the webpage's javascript file -->
+<script src="/script.js" defer></script>
+<!-- import the webpage's w3.js file to include html file-->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<body>
+
+<h1> My info</h1>
+
+<form name="myForm" required>
+    <input id="myInput" type="number" size="20" onfocus="this.value=''" value="00000" pattern="[0-9]{5}" title="Member id" maxlength="5" required class="no-spin">
+    <input type="button" name="myButton" value="Submit"
+        onclick="myFunction(); tableFunction(); this.disabled=true; this.value='Showing…';">
+    <input type="reset" value="Clear"
+        onclick="location.href='/index.html'; resetForm(this.form);">
+</form>
+
+<!--
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for user id..">
+-->
+</br>
+<div id="app" style="display:none"></div>
+
+</body>
+
+</html>
